@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>590</x>
+      <y>280</y>
+      <w>170</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>com.company::Math
+--
++input0: double
++input1: double
++operator: char
++solution: double
+--
++getInput0(): double
++getInput1(): double
++getSolution(): double
++getLongSolution(): long
++getIntSolution(): int
++doMath(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>360</x>
+      <y>160</y>
+      <w>180</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>com.company::Main
+--
+--
++main(String[] args): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>460</x>
+      <y>630</y>
+      <w>300</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>com.company::NumbersToWords
+--
+--
++numberToWord(double variableNum): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>160</x>
+      <y>630</y>
+      <w>280</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>com.company::OperatorToWords
+--
+--
++operationToWords(char inputOp): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>520</x>
+      <y>220</y>
+      <w>130</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>110.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>500</x>
+      <y>220</y>
+      <w>110</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;240.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>300</x>
+      <y>220</y>
+      <w>130</w>
+      <h>430</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;410.0;110.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>440</x>
+      <y>220</y>
+      <w>70</w>
+      <h>430</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;50.0;410.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>460</x>
+      <y>220</y>
+      <w>100</w>
+      <h>440</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>80.0;420.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>220</y>
+      <w>180</w>
+      <h>430</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>160.0;10.0;10.0;410.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>840</x>
+      <y>430</y>
+      <w>420</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>On first glance this looks a bit haphazard to me but this
+is how the program runs. 
+First the main method gets the user inputs which are fed to Math 
+Math resolves the inputs and provices a solution back to the
+Main method. Then the main method feeds that info to 
+NumbersToWords and Operator to Words which then goes back 
+to the main method to be displayed to the user. 
+
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
